@@ -65,7 +65,7 @@ class GoogleLogin(object):
 
     @property
     def scopes(self):
-        return self.app.config.get('GOOGLE_LOGIN_SCOPES', '')
+        return self.app.config.get('GOOGLE_LOGIN_CLIENT_SCOPES', '')
 
     @property
     def client_id(self):
